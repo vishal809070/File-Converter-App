@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Merge-pdf{% endblock %}
+
+{% block content %}
+    <h1>Merge Multiple PDF Files</h1>
+    <form action="/merge-pdf" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" accept=".pdf" multiple required>
+        <button type="submit">Merge</button>
+    </form>
+    <p><a href="/">Back to Home</a></p>
+
+{% endblock %}

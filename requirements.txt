@@ -1,0 +1,6 @@
+Flask
+pandas
+Pillow
+PyPDF2
+pdf2docx
+pdfplumber

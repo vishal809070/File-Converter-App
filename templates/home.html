@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | PDF Tools{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center;">Choose a tool below</h2>
+
+<div class="tool-grid">
+    <div class="tool-card">
+        <a href="/jpg-to-pdf">🖼️ JPG to PDF</a>
+        <p>Convert a single JPG image to PDF format.</p>
+    </div>
+    <div class="tool-card">
+        <a href="/merge-jpg">🧩 Merge JPGs</a>
+        <p>Combine multiple JPGs into one PDF.</p>
+    </div>
+    <div class="tool-card">
+        <a href="/merge-pdf">📑 Merge PDFs</a>
+        <p>Merge multiple PDF files into one document.</p>
+    </div>
+    <div class="tool-card">
+        <a href="/pdf-to-word">📝 PDF to Word</a>
+        <p>Convert your PDF files into editable Word documents.</p>
+    </div>
+    <div class="tool-card">
+        <a href="/pdf-to-excel">📊 PDF to Excel</a>
+        <p>Extract tables from PDF files into Excel format.</p>
+    </div>
+</div>
+{% endblock %}

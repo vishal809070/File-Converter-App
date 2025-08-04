@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}pdf-to-word{% endblock %}
+
+{% block content %}
+    <h1>Convert PDF to Word (DOCX)</h1>
+    <form action="/convert-pdf-to-word" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <button type="submit">Convert</button>
+    </form>
+    <p><a href="/">Back to Home</a></p>
+
+{% endblock %}

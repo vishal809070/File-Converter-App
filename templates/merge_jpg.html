@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Merge-jpg{% endblock %}
+
+{% block content %}
+
+    <h1>Merge JPG Images into a Single PDF</h1>
+    <form action="/merge-jpg-to-pdf" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" accept=".jpg,.jpeg" multiple required>
+        <button type="submit">Merge</button>
+    </form>
+    <p><a href="/">Back to Home</a></p>
+
+{% endblock %}
+
